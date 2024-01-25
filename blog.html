@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚛ Portfolio pabloRdiz</title>
+
+    <!-- Esta descripción debería aparecer en los resultados de búsqueda SEO-->
+    <meta
+      name="description"
+      content="Portfolio de pablo rodriguez, 15 años de experiencia como ingeniero de software"
+    />
+
+    <!-- Open Graph (https://www.opengraph.xyz/ acá se puede ver como quedaría al compartir el link a una red social)-->
+    <meta property="og:title" content="Portfolio pabloRdiz" />
+
+    <!-- Esto le dice al buscador que también existe una misma página, pero en ingles. SEO-->
+    <link rel="alternate" href="https://pablordiz.dev/en" hreflang="en-US" />
+
+    <!-- Le dice al buscar cuál es la página principal del sitio  SEO-->
+    <link rel="canonical" href="https://pablordiz.dev" />
+
+    <!-- Le dice a los motores de búsqueda (ej: google) si tiene que indexar la página y si tiene que seguir los enlaces -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- El theme color es -->
+    <meta name="theme-color" content="#09f" />
+
+    <!-- El ícono es muy importante para el SEO -->
+    <link rel="icon" type="image/jpeg" href="./images/pablordiz-photo.jpeg" />
+
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio de @pabloRdiz</h1>
+      <nav>
+        <!--enlaces internos-->
+        <a class="link" href="#experiencia">Experiencia</a>
+        <a class="link" href="#proyectos">Proyecto</a>
+        <!--enlaces externos-->
+        <!--  rel="noreferrer" no envía información de la página actual a la de destino (con esto no le damos información a la pagina destino) -->
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/pablorarg/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linkedin
+        </a>
+      </nav>
+    </header>
+
+    <!-- <video autoplay muted loop controls src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"></video> -->
+
+    <dialog id="modal">
+      <h1>¿Modal nativo?</h1>
+      <p>Si, totalmente nativo</p>
+      <button id="hide">Close modal</button>
+    </dialog>
+    <button id="show">Ver modal</button>
+
+    <script>
+      window.show.addEventListener("click", () => {
+        window.modal.showModal();
+      });
+      window.hide.addEventListener("click", () => {
+        window.modal.close();
+      });
+    </script>
+
+    <main>
+      <p>
+        +15 años de experiencia como <strong>ingeniero de software</strong> 🧑🏼‍💻
+      </p>
+      <h2 id="experiencia">Experiencia</h2>
+      <ul>
+        <li class="list-item">Galileo ➡ 2021</li>
+        <li class="list-item">Nec ➡ 2017</li>
+        <li class="list-item">Everis ➡ 2015</li>
+        <li class="list-item">Andreani ➡ 2009</li>
+        <li class="list-item">Open Solution ➡ 2007</li>
+      </ul>
+
+      <!--   loading="lazy" no debería utilizarse en imagenes que se cargan al principio de la página. Lo dejo solo para recordar que existe  -->
+      <a download href="./images/pablordiz-photo.jpeg">
+        <img
+          loading="lazy"
+          alt="una fotografía de pablo rodriguez"
+          height="200"
+          src="./images/pablordiz-photo.jpeg"
+          title="Foto de pabloRdiz"
+          width="200"
+        />
+      </a>
+      <h2 id="proyectos">Proyectos realizados</h2>
+      <aside>
+        <header><h3>Mis tecnologías favoritas</h3></header>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Node.js</li>
+          <li>React</li>
+        </ol>
+      </aside>
+
+      <section>
+        <article>
+          <header>
+            <h4>Sitio web corporativo</h4>
+          </header>
+          <p>
+            Desarrollo de una sitio web corporativo con una interfaz amigable y
+            moderna.
+          </p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Sitio web personal</h4>
+          </header>
+          <p>
+            Desarrollo de una sitio web personal con una interfaz amigable y
+            moderna.
+          </p>
+          <footer>
+            <small> Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Sitio web ecommerce</h4>
+          </header>
+          <p>
+            Desarrollo de una sitio web ecommerce con una interfaz amigable y
+            moderna.
+          </p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Sitio web corporativo</h4>
+          </header>
+          <p>
+            Desarrollo de una sitio web corporativo con una interfaz amigable y
+            moderna.
+          </p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Sitio web personal</h4>
+          </header>
+          <p>
+            Desarrollo de una sitio web personal con una interfaz amigable y
+            moderna.
+          </p>
+          <footer>
+            <small> Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Sitio web ecommerce</h4>
+          </header>
+          <p>
+            Desarrollo de una sitio web ecommerce con una interfaz amigable y
+            moderna.
+          </p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>Preguntas frecuentes</h2>
+        <details open>
+          <summary>¿Qué estudios tienes?</summary>
+          <p>Soy licenciado en ciencias de la tecnología</p>
+        </details>
+
+        <details>
+          <summary>¿Cuáles son tus hobbies?</summary>
+          <p>Me gusta ver series y jugar video juegos</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Formulario de contacto</h2>
+
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Información personal</legend>
+            <div>
+              <!-- el atributo for se usa para que cuando se hace clic en la etiqueta el curso vaya directamente al input bindeado -->
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="pablo"
+                required
+              />
+            </div>
+            <div>
+              <!-- Envolviendo el input con el label no tengo que hacer lo del for que se hizo en el input "name" -->
+              <label
+                >Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="mail@mail.com"
+                  required
+                />
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Informacion adicional</legend>
+            <label
+              >Teléfono
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+549113......"
+                required
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Otros</legend>
+            <div>
+              <label for="why">¿Por qué quieres contactar? </label>
+              <select name="why" id="why">
+                <option value="1">Trabajo</option>
+                <option value="2">Duda</option>
+                <option value="3">Más información</option>
+              </select>
+            </div>
+            <div>
+              <label for="terms">¿Acepta términos y condiciones?</label>
+              <input type="checkbox" id="terms" name="terms" required />
+            </div>
+            <div>
+              <datalist id="languages">
+                <option value="javascript"></option>
+                <option value="typescript"></option>
+                <option value="react"></option>
+              </datalist>
+              <label for="languages"
+                >¿Con qué lenguaje quieres que te ayude?</label
+              >
+              <input list="languages" name="languages" />
+            </div>
+          </fieldset>
+
+          <input type="submit" value="Enviar contacto" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      El portfolio más pro del mundo
+      <a href="mailto:pablorodriguez833@gmail.com">Envíame un correo</a>
+      <a href="tel:+5491123916012">Llamar por teléfono</a>
+    </footer>
+  </body>
+</html>

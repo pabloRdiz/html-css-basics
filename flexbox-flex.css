@@ -1,0 +1,45 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.parent {
+  display: flex;
+  border: 4px solid;
+  flex-direction: row;
+  width: 250px;
+  height: 400px;
+  justify-content: center;
+  gap: 16px;
+
+  /* writing-mode: vertical-lr; */
+}
+.item {
+  border: 1px solid;
+  opacity: 0.9;
+  width: 50px;
+  height: 50px;
+  background-color: cornflowerblue;
+align-content: flex-start;
+  /* propiedades que definen como se acomodan los hijjos en el padre
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+   flex-basis: 0;  */
+
+  /* valores poder defecto
+  flex-grow: 0; los elementos no crecen
+  flex-shrink: 1; los elemenots pueden reducir su tamaña a un tamaña más pequeño que su flex-basis
+  flex-basis: auto;
+   */
+}
+.item:first-child {
+  background: yellow;
+  height: 25px;
+}
+.item:last-child {
+  background: red;
+  height: 40px;
+}

@@ -1,0 +1,41 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background: lightgrey;
+}
+.container {
+  background: lightsalmon;
+  border: 4px solid #000;
+  border-radius: 10px;
+
+  display: grid;
+
+  grid-template-columns: minmax(100px, 1fr) 1fr 1fr;
+  gap: 4px;
+}
+
+.container div {
+  background-color: lightblue;
+  border: 2px solid #09f;
+  border-radius: 6px;
+}
+.container div:first-child {
+  background: lightgreen;
+  border: 2px solid green;
+
+  /* defino que el elemento ocupa 2 columnas */
+  grid-column-start: span 2;
+  /* otra forma de hacer la linea de código anterior */
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  /* otra forma de hacer la linea de código anterior */
+  /* grid-column: 1 / 3; */
+
+  grid-row-start: 2 span;
+  /* otra forma de hacer la linea de código anterior */
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+  /* otra forma de hacer la linea de código anterior */
+  /* grid-row: 1 / 3; */
+}

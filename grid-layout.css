@@ -1,0 +1,35 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 32px 1fr 32px;
+  height: 100vw;
+  grid-template-areas: 
+  "header header header"
+  "sidebar content content"
+  "footer footer footer";
+}
+
+.container header {
+  background-color: lightblue;
+  grid-area: header;
+}
+
+.container aside {
+  background-color: lightgoldenrodyellow;
+  grid-area: sidebar;
+}
+
+.container main {
+  background-color: lightcoral;
+  grid-area: content;
+}
+
+.container footer {
+  background-color: lightslategray;
+  grid-area: footer;
+}

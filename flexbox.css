@@ -1,0 +1,65 @@
+
+body {
+    background-color: cornflowerblue;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .desbordamiento {
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 48px;
+    /*overflow: visible es el valor por defecto*/
+    overflow: auto;
+    /* text-overflow: clip es el valor por defecto */
+    text-overflow: ellipsis;
+  }
+  
+  .posisionamiento-container {
+    border: 5px solid #000;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .posisionamiento-box {
+    background: coral;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .fixed-container {
+    border: 5px solid #000;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+  }
+  .fixed-box {
+    background: slategray;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .sticky-container {
+    border: 5px solid #000;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+  }
+  .sticky-box {
+    background: rgb(86, 214, 16);
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top: 10;
+    right: 0;
+  }
+  
